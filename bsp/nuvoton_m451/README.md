@@ -4,12 +4,12 @@
 
 目前的工程基于M451 Series_BSP_CMSIS_V3.01.001，运行在Nuvoton M451 NuEdu Board上，仅在application.c内开了一个线程实现了简单的闪灯功能。
 
-目前支持的平台有：
+目前已经测试过的平台有：
 
 平台 | 版本 
 -----|----------
 Keil | MDK4&MDK5
-GCC  | GNU Tools ARM Embedded
+GCC  | GNU Tools ARM Embedded 5.4
 
 ## 使用
 ### Keil
