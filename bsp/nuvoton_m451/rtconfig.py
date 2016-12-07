@@ -17,12 +17,10 @@ if  CROSS_TOOL == 'iar': # not support gcc
 	exit(0)
 elif CROSS_TOOL == 'keil':
 	PLATFORM 	= 'armcc'
-	EXEC_PATH 	= 'C:/Keil'
+	EXEC_PATH 	= r'C:\Keil_v5'
 elif CROSS_TOOL == 'gcc':
 	PLATFORM 	= 'gcc'
-	EXEC_PATH 	= 'C:/GCC'
-	print('Not Supported')
-	exit(0)
+	EXEC_PATH 	= r'C:\Program Files\GNU Tools ARM Embedded\5.4 2016q3\bin'
 
 if os.getenv('RTT_EXEC_PATH'):
 	EXEC_PATH = os.getenv('RTT_EXEC_PATH')
