@@ -1,0 +1,24 @@
+menu "Hardware Drivers Config"
+
+    menu "On-chip Peripheral Drivers"
+        config BSP_USING_GPIO
+            bool "Enable GPIO"
+            select RT_USING_PIN
+            default y
+
+        config BSP_USING_UART4
+            bool "Enable UART4 PB10/PB11(T/R)"
+            select RT_USING_SERIAL
+            default y
+
+    endmenu
+
+    menu "Onboard Peripheral Drivers"
+
+    endmenu
+
+    menu "Offboard Peripheral Drivers"
+
+    endmenu
+
+endmenu
